@@ -1,0 +1,16 @@
+1.Hesiranje
+Treba da se napravi vnesuvanje na korisnici so ime I broj.
+Sekoj korisnik brojot moze da mu zapocnuva na +38970777 777, +270777 777 ili
+obicno 070 777 777.Treba da se proveri dali vneseniot broj e validen broj
+t.e go ima nekoj korisnik.Ako go ima nekoj korisnik treba da go ispecati
+imeto na korisnikot ako ne treba da se ispecati Nevaliden broj.
+Na vlez se prima brojot na korisnici . Potoa nivnoto ime I broj.
+Na izlez se pecati imeto na korisnikot ako ima ili Ne postoi takov broj.
+Input:
+3
+070222333 Trajce
+075361173 Vasko
+070555555 Katerina
++38975361173
+Output
+Vasko 

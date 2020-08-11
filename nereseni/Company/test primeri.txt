@@ -1,0 +1,21 @@
+6
+Aleks Marko
+Beti Marko
+Marko Filip
+Darko Elena
+Elena Filip
+Filip Filip
+
+5
+Aleks Marko
+Beti Marko
+Marko Filip
+Darko Elena
+Elena Filip
+
+5
+Aleks Aleks
+Beti Aleks
+Marko Aleks
+Daniel Aleks
+Aleks Elena

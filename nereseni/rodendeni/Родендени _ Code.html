@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://code.finki.ukim.mk/course/61/problem/3785/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Родендени | Code</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" media="screen" href="./Родендени _ Code_files/fonts.css">
+<link rel="stylesheet" media="screen" href="./Родендени _ Code_files/bootstrap.min.css">
+<link rel="stylesheet" media="screen" href="./Родендени _ Code_files/bootstrap-yety.css">
+<link rel="stylesheet" media="screen" href="./Родендени _ Code_files/font-awesome.min.css">
+<!-- <link rel="stylesheet" media="screen" href="/public/DataTables/media/css/jquery.dataTables.min.css"> -->
+<link rel="stylesheet" media="screen" href="./Родендени _ Code_files/dataTables.bootstrap.css">
+<link rel="stylesheet" media="screen" href="./Родендени _ Code_files/main.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/codemirror.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/codemirror.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/dialog.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/fullscreen.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/neat.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/elegant.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/erlang-dark.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/night.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/monokai.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/cobalt.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/eclipse.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/rubyblue.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/lesser-dark.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/xq-dark.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/ambiance.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/blackboard.css">
+<link rel="stylesheet" href="./Родендени _ Code_files/vibrant-ink.css">
+
+<link rel="shortcut icon" type="image/png" href="http://code.finki.ukim.mk/public/images/favicon.ico">        <style>    .typist-container {      overflow: hidden;      padding-left: 4px;    }    .typist-container p {      margin: 0 0 3px;    }    .typist-container p.prompt {      margin: 5px 0;    }    </style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuTitle {background-color: #CCCCCC; margin: -1px -1px 1px -1px; text-align: center; font-style: italic; font-size: 80%; color: #444444; padding: 2px 0; overflow: hidden}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style></head>
+    <body><div id="MathJax_Message" style="display: none;"></div>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+         <div class="navbar-header">
+		  	<a class="logo" href="http://code.finki.ukim.mk/" title="Go to home page">
+	<img src="./Родендени _ Code_files/logo.png" alt="Code">
+</a> 
+<!-- <a class="logo-title brand" href="/" title="Go to home page">Code</a> -->		  	            	<a class="logo-title" href="http://code.finki.ukim.mk/course/61/" title="Go to course problem sets index page">Алгоритми и податочни структури 2016/2017</a>
+          			  	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+          	</button>          
+		 </div>
+		<div class="navbar-collapse collapse" id="navbar-main">
+          	<ul class="nav navbar-nav">
+            	          	</ul>
+        
+        	<ul class="nav navbar-nav navbar-right">
+          				            <li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="http://code.finki.ukim.mk/course/61/problem/3785/#" id="user_languages">
+		<i class="fa fa-flag fa-fw"></i> Language <span class="caret"></span>
+	</a>
+	<ul class="dropdown-menu" aria-labelledby="user_languages">
+       	<li><a href="http://code.finki.ukim.mk/langauge?locale=mk&amp;path=%2Fcourse%2F61%2Fproblem%2F3785%2F">Macedonian</a></li>
+		<li><a href="http://code.finki.ukim.mk/langauge?locale=en&amp;path=%2Fcourse%2F61%2Fproblem%2F3785%2F">English</a></li>
+    </ul>
+</li>		            <li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="http://code.finki.ukim.mk/course/61/problem/3785/#" id="user_courses">
+		<i class="fa fa-th fa-fw"></i> Courses <span class="caret"></span>
+	</a>
+	<ul class="dropdown-menu" aria-labelledby="user_courses">
+        			<li><a href="http://code.finki.ukim.mk/course/61/"><i class="fa fa-angle-right fa-fw"></i> Алгоритми и податочни структури 2016/2017</a></li> 
+					<li><a href="http://code.finki.ukim.mk/course/48/"><i class="fa fa-angle-right fa-fw"></i> Алогоритми и податочни структури 2015</a></li> 
+					<li><a href="http://code.finki.ukim.mk/course/37/"><i class="fa fa-angle-right fa-fw"></i> Објектно ориентирано програмирање 2015</a></li> 
+					<li><a href="http://code.finki.ukim.mk/course/55/"><i class="fa fa-angle-right fa-fw"></i> Оперативни Системи 2016</a></li> 
+					<li><a href="http://code.finki.ukim.mk/course/43/"><i class="fa fa-angle-right fa-fw"></i> Основи на веб дизајн</a></li> 
+					<li><a href="http://code.finki.ukim.mk/course/30/"><i class="fa fa-angle-right fa-fw"></i> Структурно програмирање 2014</a></li> 
+		    </ul>
+</li>	            	<li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="http://code.finki.ukim.mk/course/61/problem/3785/#" id="user">
+		<i class="fa fa-user fa-fw"></i> Владимир Димовски <span class="caret"></span>
+	</a>
+	<ul class="dropdown-menu" aria-labelledby="user">
+        <li>
+			<a tabindex="-1" href="http://code.finki.ukim.mk/course/61/problem/3785/#"><i class="fa fa-eye fa-fw"></i> Student</a>
+		</li>	        
+        <li class="divider"></li>
+        <li>
+			<a href="http://code.finki.ukim.mk/logout"><i class="fa fa-sign-out fa-fw"></i> Sign out</a>
+		</li>
+       </ul>
+</li>
+		         	        </ul>
+         </div>
+          
+	</div>
+</div>
+
+    <div class="container-fluid">
+        <div class="page-header">
+	<h2><i class="fa fa-angle-double-right"></i> <a href="http://code.finki.ukim.mk/course/61/problemset/1188/" title="">Пример задачи - испит</a>  <small>(14)</small></h2>
+</div>      <div id="wrapper">
+      <button class="btn btn-default btn-xs" id="menu-toggle">
+          <i id="btn-icon" class="fa fa-chevron-right fa-fw"></i>
+      </button>
+      <div id="sidebar-wrapper">
+          <div class="well sidebar-nav">
+                <ul class="nav nav-pills nav-stacked">
+<li class="nav-header">Problems</li>
+	    <li>
+    	<a href="http://code.finki.ukim.mk/course/61/problem/3784/">1) Round-Robin
+        </a></li>
+    	    <li>
+    	<a href="http://code.finki.ukim.mk/course/61/problem/3783/">2) Патека со плочки
+        </a></li>
+    	    <li class="active">
+    	<a href="http://code.finki.ukim.mk/course/61/problem/3785/">3) Родендени
+        </a></li>
+    </ul>          </div><!--/.well -->
+          <div class="help">
+                      </div>
+      </div>
+      <div id="problem-layout">
+      
+
+
+
+    <div id="clock" class="pull-right">
+        <span class="time-label">Opened:</span>
+      <ul>
+          <li id="time">2 дена</li>          
+      </ul>
+    </div>
+    <h3 id="problem-name">Родендени <small>Problem 3 (1 / 3) </small></h3>
+
+<div class="row">    
+    <div id="problem-text" class="col-md-4">    
+    	<p>Дадена е листа на дати на раѓање на сите вработени во една организација. Ваша задача е за даден датум да испечатите кои вработени на организацијата ќе слават роденден тој ден и колку години ќе полнат (сортирани според името на вработениот). Доколку за дадениот датум нема родендени да се испечати Nema.</p>
+
+<p><strong>Влез:</strong> Во првиот ред од влезот е даден бројот на вработени, а во секој нареден ред е прво дадено името и презимето на вработениот и датата на раѓање (формат dd/mm/yyyy). Во последниот ред е даден датумот за кој треба да испечатите кои луѓе слават роденден на тој датум.</p>
+
+<p><strong>Излез:</strong> Името на вработениот и колку години полни, сортирани според името на вработениот.</p>
+
+<p><strong>Делумно решение:</strong> Задачата се смета за делумно решена доколку се поминати 7 тест-примери.</p>
+
+<p><strong>Забелешка:</strong> При реализација на задачите не е дозволено да се користат помошни структури како низи или сл. <strong>На располагање од структурите имате само хеш структура</strong>. Единствено за <strong>сортирање</strong> на резултатите може да користите помошна структура.</p>
+
+<p><strong>Име на класа (Јава):</strong> Rodendeni</p>
+    </div>
+    <div id="editor" class="col-md-8">
+    <div id="editor-header">
+    	<label for="code" class="pull-left">Your solution:</label>
+    	<div class="pull-right programming_language">
+    	Programming language:
+    	    		    					    		<span class="label label-info">Java</span>
+    			    			    		    			    					    		<a href="http://code.finki.ukim.mk/course/61/problem/3785/?programmingLanguageId=1">
+    					<span class="label label-default">C</span>
+    				</a>
+    			    		    	    	</div>
+    </div>
+    <div class="clearfix"></div>
+    <textarea id="code" name="code" style="display: none;">import java.util.HashMap;
+import java.util.Scanner;
+
+
+public class Rodendeni {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap&lt;String,String&gt; heshis = new HashMap();
+		Scanner in= new Scanner(System.in);
+		int n=Integer.parseInt(in.nextLine());
+		//System.out.println(n);
+		for(int i=0;i&lt;n;i++)
+		{
+			String pom[] =in.nextLine().split(" ");
+		/*	if(heshis.get(pom[0]+" "+pom[1])==null)
+			{
+				heshis.put(pom[0]+" "+pom[1], value)
+			}*/
+			String datumi[] = pom[2].split("/");
+			String hesh= datumi[0]+datumi[1];
+			String value=pom[0]+" "+pom[1]+" "+datumi[2];
+			if(heshis.get(hesh)==null)
+			{
+				heshis.put(hesh, value);
+			}
+			else
+			{
+				String zemi=heshis.get(hesh);
+				zemi+="/"+value;
+				//System.out.println(zemi);
+				heshis.put(hesh, zemi);
+			}
+		}
+		String vrati=in.nextLine();
+		String pom2[]=vrati.split("/");
+		//System.out.println(heshis.get(pom2[0]+pom2[1]));
+		if(heshis.get(pom2[0]+pom2[1])!=null)
+		{
+				String print[]=heshis.get(pom2[0]+pom2[1]).split("/");
+				for(int i=0;i&lt;print.length;i++)
+				{
+					for(int j=0;j&lt;print.length;j++)
+					{
+						String Prva[]=print[i].split(" ");
+						String Vtora[]=print[j].split(" ");
+					//	System.out.println(print[i]);
+					//	System.out.println(print[j]);
+						if(Prva[0].compareTo(Vtora[0])&lt;0)
+						{
+							String temp=print[i];
+							print[i]=print[j];
+							print[j]=temp;
+						}
+					}
+					
+				}
+				for(int i=0;i&lt;print.length;i++)
+				{
+					String temp[]=print[i].split(" ");
+					int k=Integer.parseInt(pom2[2])-Integer.parseInt(temp[2]);
+					System.out.println(temp[0]+" "+temp[1]+" "+k);
+				}
+		}
+		else
+			System.out.println("Nema");
+		
+		
+		
+	}
+
+}
+</textarea><div class="CodeMirror cm-s-default" style="height: 520px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4.90056px; left: 49.9006px;"><textarea autocorrect="off" autocapitalize="off" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 45px;"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar" style="display: block; bottom: 0px;"><div style="width: 1px; height: 1004px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div style="position: relative; min-height: 100%;"><div class="CodeMirror-sizer" style="min-width: 637.204px; margin-left: 45px; min-height: 1003.55px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span class="cm-keyword">i</span><span class="cm-keyword">m</span><span class="cm-keyword">p</span><span class="cm-keyword">o</span><span class="cm-keyword">r</span><span class="cm-keyword">t</span><span> </span><span class="cm-variable">j</span><span class="cm-variable">a</span><span class="cm-variable">v</span><span class="cm-variable">a</span><span>.</span><span class="cm-variable">u</span><span class="cm-variable">t</span><span class="cm-variable">i</span><span class="cm-variable">l</span><span>.</span><span class="cm-variable">H</span><span class="cm-variable">a</span><span class="cm-variable">s</span><span class="cm-variable">h</span><span class="cm-variable">M</span><span class="cm-variable">a</span><span class="cm-variable">p</span><span>;</span></pre></div><div style="position: relative; z-index: 1; display: none;"></div><div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">1</div></div><pre><span class="cm-keyword">import</span> <span class="cm-variable">java</span>.<span class="cm-variable">util</span>.<span class="cm-variable">HashMap</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">2</div></div><pre><span class="cm-keyword">import</span> <span class="cm-variable">java</span>.<span class="cm-variable">util</span>.<span class="cm-variable">Scanner</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">3</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">4</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">5</div></div><pre><span class="cm-keyword">public</span> <span class="cm-keyword">class</span> <span class="cm-variable">Rodendeni</span> {</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">6</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">7</div></div><pre><span class="cm-tab">    </span><span class="cm-keyword">public</span> <span class="cm-keyword">static</span> <span class="cm-keyword">void</span> <span class="cm-variable">main</span>(<span class="cm-variable">String</span>[] <span class="cm-variable">args</span>) {</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">8</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-comment">// TODO Auto-generated method stub</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">9</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">HashMap</span><span class="cm-operator">&lt;</span><span class="cm-variable">String</span>,<span class="cm-variable">String</span><span class="cm-operator">&gt;</span> <span class="cm-variable">heshis</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">HashMap</span>();</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">10</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">Scanner</span> <span class="cm-variable">in</span><span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Scanner</span>(<span class="cm-variable">System</span>.<span class="cm-variable">in</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">11</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">int</span> <span class="cm-variable">n</span><span class="cm-operator">=</span><span class="cm-variable">Integer</span>.<span class="cm-variable">parseInt</span>(<span class="cm-variable">in</span>.<span class="cm-variable">nextLine</span>());</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">12</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-comment">//System.out.println(n);</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">13</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">for</span>(<span class="cm-keyword">int</span> <span class="cm-variable">i</span><span class="cm-operator">=</span><span class="cm-number">0</span>;<span class="cm-variable">i</span><span class="cm-operator">&lt;</span><span class="cm-variable">n</span>;<span class="cm-variable">i</span><span class="cm-operator">++</span>)</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">14</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>{</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">15</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">pom</span>[] <span class="cm-operator">=</span><span class="cm-variable">in</span>.<span class="cm-variable">nextLine</span>().<span class="cm-variable">split</span>(<span class="cm-string">" "</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">16</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-comment">/*<span class="cm-tab">  </span>if(heshis.get(pom[0]+" "+pom[1])==null)</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">17</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-comment">{</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">18</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-comment">heshis.put(pom[0]+" "+pom[1], value)</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">19</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-comment">}*/</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">20</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">datumi</span>[] <span class="cm-operator">=</span> <span class="cm-variable">pom</span>[<span class="cm-number">2</span>].<span class="cm-variable">split</span>(<span class="cm-string">"/"</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">21</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">hesh</span><span class="cm-operator">=</span> <span class="cm-variable">datumi</span>[<span class="cm-number">0</span>]<span class="cm-operator">+</span><span class="cm-variable">datumi</span>[<span class="cm-number">1</span>];</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">22</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">value</span><span class="cm-operator">=</span><span class="cm-variable">pom</span>[<span class="cm-number">0</span>]<span class="cm-operator">+</span><span class="cm-string">" "</span><span class="cm-operator">+</span><span class="cm-variable">pom</span>[<span class="cm-number">1</span>]<span class="cm-operator">+</span><span class="cm-string">" "</span><span class="cm-operator">+</span><span class="cm-variable">datumi</span>[<span class="cm-number">2</span>];</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">23</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">if</span>(<span class="cm-variable">heshis</span>.<span class="cm-variable">get</span>(<span class="cm-variable">hesh</span>)<span class="cm-operator">==</span><span class="cm-atom">null</span>)</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">24</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span>{</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">25</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">heshis</span>.<span class="cm-variable">put</span>(<span class="cm-variable">hesh</span>, <span class="cm-variable">value</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">26</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span>}</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">27</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">else</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">28</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span>{</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">29</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">zemi</span><span class="cm-operator">=</span><span class="cm-variable">heshis</span>.<span class="cm-variable">get</span>(<span class="cm-variable">hesh</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">30</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">zemi</span><span class="cm-operator">+=</span><span class="cm-string">"/"</span><span class="cm-operator">+</span><span class="cm-variable">value</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">31</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-comment">//System.out.println(zemi);</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">32</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">heshis</span>.<span class="cm-variable">put</span>(<span class="cm-variable">hesh</span>, <span class="cm-variable">zemi</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">33</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span>}</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">34</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>}</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">35</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">vrati</span><span class="cm-operator">=</span><span class="cm-variable">in</span>.<span class="cm-variable">nextLine</span>();</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">36</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">pom2</span>[]<span class="cm-operator">=</span><span class="cm-variable">vrati</span>.<span class="cm-variable">split</span>(<span class="cm-string">"/"</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">37</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-comment">//System.out.println(heshis.get(pom2[0]+pom2[1]));</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">38</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">if</span>(<span class="cm-variable">heshis</span>.<span class="cm-variable">get</span>(<span class="cm-variable">pom2</span>[<span class="cm-number">0</span>]<span class="cm-operator">+</span><span class="cm-variable">pom2</span>[<span class="cm-number">1</span>])<span class="cm-operator">!=</span><span class="cm-atom">null</span>)</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">39</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span>{</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">40</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">print</span>[]<span class="cm-operator">=</span><span class="cm-variable">heshis</span>.<span class="cm-variable">get</span>(<span class="cm-variable">pom2</span>[<span class="cm-number">0</span>]<span class="cm-operator">+</span><span class="cm-variable">pom2</span>[<span class="cm-number">1</span>]).<span class="cm-variable">split</span>(<span class="cm-string">"/"</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">41</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">for</span>(<span class="cm-keyword">int</span> <span class="cm-variable">i</span><span class="cm-operator">=</span><span class="cm-number">0</span>;<span class="cm-variable">i</span><span class="cm-operator">&lt;</span><span class="cm-variable">print</span>.<span class="cm-variable">length</span>;<span class="cm-variable">i</span><span class="cm-operator">++</span>)</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">42</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span>{</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">43</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-keyword">for</span>(<span class="cm-keyword">int</span> <span class="cm-variable">j</span><span class="cm-operator">=</span><span class="cm-number">0</span>;<span class="cm-variable">j</span><span class="cm-operator">&lt;</span><span class="cm-variable">print</span>.<span class="cm-variable">length</span>;<span class="cm-variable">j</span><span class="cm-operator">++</span>)</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">44</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span>{</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">45</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">Prva</span>[]<span class="cm-operator">=</span><span class="cm-variable">print</span>[<span class="cm-variable">i</span>].<span class="cm-variable">split</span>(<span class="cm-string">" "</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">46</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-variable">String</span> <span class="cm-variable">Vtora</span>[]<span class="cm-operator">=</span><span class="cm-variable">print</span>[<span class="cm-variable">j</span>].<span class="cm-variable">split</span>(<span class="cm-string">" "</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 20px; width: 15px;">47</div></div><pre><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-tab">    </span><span class="cm-comment">//<span class="cm-tab">  </span>System.out.println(print[i]);</span></pre></div></div><div class="CodeMirror-cursor" style="left: 3.99149px; top: 0px; height: 14px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 1003.55px;"></div><div class="CodeMirror-gutters" style="left: 3.05176e-05px;"><div class="CodeMirror-gutter CodeMirror-compiler-message"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 24px;"></div></div></div></div></div>
+    <div id="editor-control">
+    	<div class="row">
+    		<div class="col-md-4">
+    			<div id="problem-revisions">	<label for="revision" class="editor-control-label">Revision:</label>
+	
+<select name="solutionHistory" size="1" id="solutionHistory" class="form-control input-sm">
+    					<option value="4836604" title="2017-01-24 20:51:26.0">2 days ago - 20:51:26
+</option>					<option value="4836601" title="2017-01-24 20:51:03.0">2 days ago - 20:51:03
+</option>					<option value="4836592" title="2017-01-24 20:48:03.0">2 days ago - 20:48:03
+</option>			    </select>
+
+	<input type="hidden" name="hasHistory" id="hasHistory" value="true">
+</div>
+	    		<button id="restore" class="btn btn-default btn-xs"><i class="fa fa-undo"></i> Restore</button>
+    		</div>
+    		<div class="col-md-8">
+    		<div class="row">
+    			<div class="col-md-2">
+		    		Full Screen <b>F11</b>
+    			</div>
+                <div class="col-md-3">
+                    heigth:
+                    <button id="setFixedBtn" class="btn btn-default btn-xs">
+                        520px
+                    </button>
+                    <button id="setAutoBtn" class="btn btn-default btn-xs" style="display: none;">
+                        Auto
+                    </button>
+                </div>
+    			<div class="col-md-3">
+			    	<a class="jfontsize-button" id="minus-btn" style="cursor: pointer;">A-</a>
+			    	<a class="jfontsize-button" id="default-btn" style="cursor: pointer;">A</a>
+			    	<a class="jfontsize-button" id="plus-btn" style="cursor: pointer;">A+</a>
+    			</div>
+    			<div class="col-md-4">
+    			<label for="select-theme" id="select-theme-lbl" class="editor-control-label">
+		    		Select a theme: 
+		    	</label>
+		    	<select id="select-theme" class="form-control input-sm">
+			    	<option selected="">default</option>
+			    	<option>ambiance</option>
+			    	<option>blackboard</option>
+			    	<option>cobalt</option>
+			    	<option>eclipse</option>
+			    	<option>elegant</option>
+			    	<option>erlang-dark</option>
+			    	<option>lesser-dark</option>
+			    	<option>monokai</option>
+			    	<option>neat</option>
+			    	<option>night</option>
+			    	<option>rubyblue</option>
+			    	<option>vibrant-ink</option>
+			    	<option>xq-dark</option>
+		    	</select>
+    			</div>
+	    	</div>
+    		</div>
+    	</div>
+    </div>
+    
+    
+        <div class="form-actions" style="clear:both;">
+        <div id="buttons" style="display: block;">
+        	<div class="row">
+        		<div class="col-md-6">
+		            <button id="run" class="btn btn-info btn-sm"><i class="fa fa-play"></i> Run</button>
+		            <button id="submit" class="btn btn-primary btn-sm"><i class="fa fa-play-circle"></i> Submit</button>
+		            <a href="http://code.finki.ukim.mk/course/61/problem/3785/#resetAlert" role="button" class="btn btn-danger btn-sm" data-toggle="modal"><i class="fa fa-retweet"></i> Reset</a>
+		            <button id="format" class="btn btn-default btn-sm"><i class="fa fa-magic"></i> Format</button>
+                    <!-- <button id="analyze" class="btn btn-default btn-sm"><i class="fa fa-cogs"></i> analyze</button> -->
+		            <!-- <a href="#yes_i_will_solve" role="button" class="btn btn-sm btn-warning pull-right" data-toggle="modal"><i class="fa fa-meh-o fa-fw"></i> Solve all my problems!</a> -->
+		            <!-- <button id="save" class="btn"><i class="fa fa-check"></i> Save</button> -->
+        		</div>
+        		<div class="col-md-6" id="attempts"> 
+	<span>Unlimited attempts</span>
+</div>
+        	</div>
+        </div>
+        <div id="working" style="display: none;">
+            <span id="working_msg">working...</span>
+            <img src="./Родендени _ Code_files/ajax-loader.gif">
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="program-output">
+        <h3>Program output
+        <img src="./Родендени _ Code_files/c.png" id="correct_img" style="display: none;">
+        <img src="./Родендени _ Code_files/w.png" id="wrong_img" style="display: none;"></h3>
+        <pre id="warning" class="pre-scrollable output-warning" style="display: none;"></pre>
+        <div id="clang_output" style="display: none;">
+            <h3><a id="output_link" target="_blank" class="text-danger">View report</a></h3>
+        </div>
+        <pre id="output" class="pre-scrollable"></pre>
+    </div>
+        <div id="sample-input" style="clear: both;">
+    	<div class="row">
+        <div class="col-md-6">
+            <h3>Sample input</h3>
+            <pre id="ex_input">3
+Magdalena Kostoska 15/05/1982
+Hristina Mihajloska 30/05/1984
+Ilinka Ivanoska 15/05/1986
+15/05/2016
+</pre>
+        </div>
+        <div class="col-md-6">
+		    <h3>Sample output</h3>
+		    <pre id="expected">Ilinka Ivanoska 30
+Magdalena Kostoska 34
+</pre>
+        </div>
+        </div>
+    </div>
+    <div id="submission-output" style="clear:both;">
+<h3>Result: <span class="result result-success">100.00 % (10/10)</span></h3>
+
+<table class="table table-striped table-bordered table-condensed">
+<caption>Testing details</caption>
+<thead>
+    <tr>
+        <th width="5%">Test case #</th>
+        <th width="20%">Input</th>
+        <th width="25%">Output</th>
+        <th width="25%">Your output</th>
+        <th width="25%">Correct</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+    <td>1</td>
+    <td><pre id="input_1">3
+Magdalena Kostoska 15/05/1982
+Hristina Mihajloska 30/05/1984
+Ilinka Ivanoska 15/05/1986
+15/05/2016
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">43</span>
+    	</div>
+    	<pre id="output_1">Ilinka Ivanoska 30
+Magdalena Kostoska 34
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">41</span>
+    	</div>
+    	<pre id="your_output_1">Ilinka Ivanoska 30
+Magdalena Kostoska 34
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_1" class="diff"></pre>
+    </td>
+</tr>
+<tr>
+    <td>2</td>
+    <td><pre id="input_2">4
+Magdalena Kostoska 15/05/1982
+Hristina Mihajloska 30/05/1984
+Ilinka Ivanoska 15/05/1986
+Anastas Mishev 30/05/1975
+30/05/2015
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">43</span>
+    	</div>
+    	<pre id="output_2">Anastas Mishev 40
+Hristina Mihajloska 31
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">41</span>
+    	</div>
+    	<pre id="your_output_2">Anastas Mishev 40
+Hristina Mihajloska 31
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_2" class="diff"></pre>
+    </td>
+</tr>
+<tr>
+    <td>3</td>
+    <td><pre id="input_3">4
+Magdalena Kostoska 15/05/1982
+Hristina Mihajloska 30/05/1984
+Ilinka Ivanoska 15/05/1986
+Anastas Mishev 30/05/1975
+15/04/2016
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">6</span>
+    	</div>
+    	<pre id="output_3">Nema
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">5</span>
+    	</div>
+    	<pre id="your_output_3">Nema
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_3" class="diff"></pre>
+    </td>
+</tr>
+<tr>
+    <td>4</td>
+    <td><pre id="input_4">6
+Magdalena Kostoska 15/05/1982
+Hristina Mihajloska 30/05/1984
+Ilinka Ivanoska 15/05/1986
+Anastas Mishev 30/05/1975
+Trpe Trpeski 30/05/1951
+Trpana Trpeska 30/05/1951
+30/05/2016
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">79</span>
+    	</div>
+    	<pre id="output_4">Anastas Mishev 41
+Hristina Mihajloska 32
+Trpana Trpeska 65
+Trpe Trpeski 65
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">75</span>
+    	</div>
+    	<pre id="your_output_4">Anastas Mishev 41
+Hristina Mihajloska 32
+Trpana Trpeska 65
+Trpe Trpeski 65
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_4" class="diff"></pre>
+    </td>
+</tr>
+<tr>
+    <td>5</td>
+    <td><pre id="input_5">20
+Aaaaaa Bbbbba 15/01/2001
+Aaaaab Bbbbbb 14/01/2000
+Aaaaac Bbbbbc 13/01/1999
+Aaaaad Bbbbbd 12/01/1998
+Aaaaae Bbbbbe 15/01/1997
+Aaaaaf Bbbbbf 14/01/1996
+Aaaaag Bbbbbg 13/01/1995
+Aaaaah Bbbbbh 12/01/1994
+Aaaaai Bbbbbi 15/01/1993
+Aaaaaj Bbbbbj 14/01/1992
+Aaaaak Bbbbbk 13/01/1991
+Aaaaal Bbbbbl 12/01/1990
+Aaaaam Bbbbbm 15/01/1989
+Aaaaan Bbbbbn 14/01/1988
+Aaaaao Bbbbbo 13/01/1987
+Aaaaap Bbbbbp 12/01/1986
+Aaaaaq Bbbbbq 15/01/1985
+Aaaaar Bbbbbr 14/01/1984
+Aaaaas Bbbbbs 13/01/1983
+Aaaaat Bbbbbt 12/01/1982
+15/01/2015
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">90</span>
+    	</div>
+    	<pre id="output_5">Aaaaaa Bbbbba 14
+Aaaaae Bbbbbe 18
+Aaaaai Bbbbbi 22
+Aaaaam Bbbbbm 26
+Aaaaaq Bbbbbq 30
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">85</span>
+    	</div>
+    	<pre id="your_output_5">Aaaaaa Bbbbba 14
+Aaaaae Bbbbbe 18
+Aaaaai Bbbbbi 22
+Aaaaam Bbbbbm 26
+Aaaaaq Bbbbbq 30
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_5" class="diff"></pre>
+    </td>
+</tr>
+<tr>
+    <td>6</td>
+    <td><pre id="input_6">20
+Aaaaaa Bbbbba 15/01/2001
+Aaaaab Bbbbbb 14/01/2000
+Aaaaac Bbbbbc 13/01/1999
+Aaaaad Bbbbbd 12/01/1998
+Aaaaae Bbbbbe 15/01/1997
+Aaaaaf Bbbbbf 14/01/1996
+Aaaaag Bbbbbg 13/01/1995
+Aaaaah Bbbbbh 12/01/1994
+Aaaaai Bbbbbi 15/01/1993
+Aaaaaj Bbbbbj 14/01/1992
+Aaaaak Bbbbbk 13/01/1991
+Aaaaal Bbbbbl 12/01/1990
+Aaaaam Bbbbbm 15/01/1989
+Aaaaan Bbbbbn 14/01/1988
+Aaaaao Bbbbbo 13/01/1987
+Aaaaap Bbbbbp 12/01/1986
+Aaaaaq Bbbbbq 15/01/1985
+Aaaaar Bbbbbr 14/01/1984
+Aaaaas Bbbbbs 13/01/1983
+Aaaaat Bbbbbt 12/01/1982
+16/01/2016
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">6</span>
+    	</div>
+    	<pre id="output_6">Nema
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">5</span>
+    	</div>
+    	<pre id="your_output_6">Nema
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_6" class="diff"></pre>
+    </td>
+</tr>
+<tr>
+    <td>7</td>
+    <td><pre id="input_7">20
+Aaaaaa Bbbbba 13/01/1997
+Aaaaab Bbbbbb 14/01/2000
+Aaaaac Bbbbbc 13/01/1999
+Aaaaad Bbbbbd 12/01/1998
+Aaaaae Bbbbbe 15/01/1997
+Aaaaaf Bbbbbf 13/01/1996
+Aaaaag Bbbbbg 13/01/1995
+Aaaaah Bbbbbh 12/01/1994
+Aaaaai Bbbbbi 15/01/1993
+Aaaaaj Bbbbbj 14/01/1992
+Aaaaak Bbbbbk 13/01/1991
+Aaaaal Bbbbbl 12/01/1990
+Aaaaam Bbbbbm 15/01/1989
+Aaaaan Bbbbbn 14/01/1988
+Aaaaao Bbbbbo 13/01/1951
+Aaaaap Bbbbbp 12/01/1986
+Aaaaaq Bbbbbq 15/01/1985
+Aaaaar Bbbbbr 14/01/1984
+Aaaaas Bbbbbs 13/01/1978
+Aaaaat Bbbbbt 12/01/1982
+13/01/2016
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">126</span>
+    	</div>
+    	<pre id="output_7">Aaaaaa Bbbbba 19
+Aaaaac Bbbbbc 17
+Aaaaaf Bbbbbf 20
+Aaaaag Bbbbbg 21
+Aaaaak Bbbbbk 25
+Aaaaao Bbbbbo 65
+Aaaaas Bbbbbs 38
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">119</span>
+    	</div>
+    	<pre id="your_output_7">Aaaaaa Bbbbba 19
+Aaaaac Bbbbbc 17
+Aaaaaf Bbbbbf 20
+Aaaaag Bbbbbg 21
+Aaaaak Bbbbbk 25
+Aaaaao Bbbbbo 65
+Aaaaas Bbbbbs 38
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_7" class="diff"></pre>
+    </td>
+</tr>
+<tr>
+    <td>8</td>
+    <td><pre id="input_8">104
+Aaaaba Bbbbba 13/01/1999
+Aaaabb Bbbbbb 12/01/1998
+Aaaabc Bbbbbc 11/01/1997
+Aaaabd Bbbbbd 10/01/1996
+Aaaabe Bbbbbe 13/01/1995
+Aaaabf Bbbbbf 12/01/1994
+Aaaabg Bbbbbg 11/01/1993
+Aaaabh Bbbbbh 10/01/1992
+Aaaabi Bbbbbi 13/01/1991
+Aaaabj Bbbbbj 12/01/1990
+Aaaabk Bbbbbk 11/01/1989
+Aaaabl Bbbbbl 10/01/1988
+Aaaabm Bbbbbm 13/01/1987
+Aaaabn Bbbbbn 12/01/1986
+Aaaabo Bbbbbo 11/01/1985
+Aaaabp Bbbbbp 10/01/1984
+Aaaabq Bbbbbq 13/01/1983
+Aaaabr Bbbbbr 12/01/1982
+Aaaabs Bbbbbs 11/01/1981
+Aaaabt Bbbbbt 10/01/1980
+Aaaabu Bbbbbu 13/01/1979
+Aaaabv Bbbbbv 12/01/1978
+Aaaabw Bbbbbw 11/01/1977
+Aaaabx Bbbbbx 10/01/1976
+Aaaaby Bbbbby 13/01/1975
+Aaaabz Bbbbbz 12/01/1974
+Aaaaaaa Bbbbba 15/01/1999
+Aaaaaab Bbbbbb 14/01/1998
+Aaaaaac Bbbbbc 13/01/1997
+Aaaaaad Bbbbbd 12/01/1996
+Aaaaaae Bbbbbe 15/01/1995
+Aaaaaaf Bbbbbf 14/01/1994
+Aaaaaag Bbbbbg 13/01/1993
+Aaaaaah Bbbbbh 12/01/1992
+Aaaaaai Bbbbbi 15/01/1991
+Aaaaaaj Bbbbbj 14/01/1990
+Aaaaaak Bbbbbk 13/01/1989
+Aaaaaal Bbbbbl 12/01/1988
+Aaaaaam Bbbbbm 15/01/1987
+Aaaaaan Bbbbbn 14/01/1986
+Aaaaaao Bbbbbo 13/01/1985
+Aaaaaap Bbbbbp 12/01/1984
+Aaaaaaq Bbbbbq 15/01/1983
+Aaaaaar Bbbbbr 14/01/1982
+Aaaaaas Bbbbbs 13/01/1981
+Aaaaaat Bbbbbt 12/01/1980
+Aaaaaau Bbbbbu 15/01/1979
+Aaaaaav Bbbbbv 14/01/1978
+Aaaaaaw Bbbbbw 13/01/1977
+Aaaaaax Bbbbbx 12/01/1976
+Aaaaaay Bbbbby 15/01/1975
+Aaaaaaz Bbbbbz 14/01/1974
+Aaabaa Bbbbba 17/01/1999
+Aaabab Bbbbbb 16/01/1998
+Aaabac Bbbbbc 15/01/1997
+Aaabad Bbbbbd 14/01/1996
+Aaabae Bbbbbe 13/01/1995
+Aaabaf Bbbbbf 12/01/1994
+Aaabag Bbbbbg 11/01/1993
+Aaabah Bbbbbh 17/01/1992
+Aaabai Bbbbbi 16/01/1991
+Aaabaj Bbbbbj 15/01/1990
+Aaabak Bbbbbk 14/01/1989
+Aaabal Bbbbbl 13/01/1988
+Aaabam Bbbbbm 12/01/1987
+Aaaban Bbbbbn 11/01/1986
+Aaabao Bbbbbo 17/01/1985
+Aaabap Bbbbbp 16/01/1984
+Aaabaq Bbbbbq 15/01/1983
+Aaabar Bbbbbr 14/01/1982
+Aaabas Bbbbbs 13/01/1981
+Aaabat Bbbbbt 12/01/1980
+Aaabau Bbbbbu 11/01/1979
+Aaabav Bbbbbv 12/01/1978
+Aaabaw Bbbbbw 11/01/1977
+Aaabax Bbbbbx 10/01/1976
+Aaabay Bbbbby 13/01/1975
+Aaabaz Bbbbbz 12/01/1974
+Aaaaaa Bbbbba 15/01/1999
+Aaaaab Bbbbbb 14/01/1998
+Aaaaac Bbbbbc 13/01/1997
+Aaaaad Bbbbbd 12/01/1996
+Aaaaae Bbbbbe 15/01/1995
+Aaaaaf Bbbbbf 14/01/1994
+Aaaaag Bbbbbg 13/01/1993
+Aaaaah Bbbbbh 12/01/1992
+Aaaaai Bbbbbi 15/01/1991
+Aaaaaj Bbbbbj 14/01/1990
+Aaaaak Bbbbbk 13/01/1989
+Aaaaal Bbbbbl 12/01/1988
+Aaaaam Bbbbbm 15/01/1987
+Aaaaan Bbbbbn 14/01/1986
+Aaaaao Bbbbbo 13/01/1985
+Aaaaap Bbbbbp 12/01/1984
+Aaaaaq Bbbbbq 15/01/1983
+Aaaaar Bbbbbr 14/01/1982
+Aaaaas Bbbbbs 13/01/1981
+Aaaaat Bbbbbt 12/01/1980
+Aaaaau Bbbbbu 15/01/1979
+Aaaaav Bbbbbv 14/01/1978
+Aaaaaw Bbbbbw 13/01/1977
+Aaaaax Bbbbbx 12/01/1976
+Aaaaay Bbbbby 15/01/1975
+Aaaaaz Bbbbbz 14/01/1974
+14/01/2016
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">313</span>
+    	</div>
+    	<pre id="output_8">Aaaaaab Bbbbbb 18
+Aaaaaaf Bbbbbf 22
+Aaaaaaj Bbbbbj 26
+Aaaaaan Bbbbbn 30
+Aaaaaar Bbbbbr 34
+Aaaaaav Bbbbbv 38
+Aaaaaaz Bbbbbz 42
+Aaaaab Bbbbbb 18
+Aaaaaf Bbbbbf 22
+Aaaaaj Bbbbbj 26
+Aaaaan Bbbbbn 30
+Aaaaar Bbbbbr 34
+Aaaaav Bbbbbv 38
+Aaaaaz Bbbbbz 42
+Aaabad Bbbbbd 20
+Aaabak Bbbbbk 27
+Aaabar Bbbbbr 34
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">296</span>
+    	</div>
+    	<pre id="your_output_8">Aaaaaab Bbbbbb 18
+Aaaaaaf Bbbbbf 22
+Aaaaaaj Bbbbbj 26
+Aaaaaan Bbbbbn 30
+Aaaaaar Bbbbbr 34
+Aaaaaav Bbbbbv 38
+Aaaaaaz Bbbbbz 42
+Aaaaab Bbbbbb 18
+Aaaaaf Bbbbbf 22
+Aaaaaj Bbbbbj 26
+Aaaaan Bbbbbn 30
+Aaaaar Bbbbbr 34
+Aaaaav Bbbbbv 38
+Aaaaaz Bbbbbz 42
+Aaabad Bbbbbd 20
+Aaabak Bbbbbk 27
+Aaabar Bbbbbr 34
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_8" class="diff"></pre>
+    </td>
+</tr>
+<tr>
+    <td>9</td>
+    <td><pre id="input_9">104
+Aaaaba Bbbbba 13/01/1999
+Aaaabb Bbbbbb 12/01/1998
+Aaaabc Bbbbbc 11/01/1997
+Aaaabd Bbbbbd 10/01/1996
+Aaaabe Bbbbbe 13/01/1995
+Aaaabf Bbbbbf 12/01/1994
+Aaaabg Bbbbbg 11/01/1993
+Aaaabh Bbbbbh 10/01/1992
+Aaaabi Bbbbbi 13/01/1991
+Aaaabj Bbbbbj 12/01/1990
+Aaaabk Bbbbbk 11/01/1989
+Aaaabl Bbbbbl 10/01/1988
+Aaaabm Bbbbbm 13/01/1987
+Aaaabn Bbbbbn 12/01/1986
+Aaaabo Bbbbbo 11/01/1985
+Aaaabp Bbbbbp 10/01/1984
+Aaaabq Bbbbbq 13/01/1983
+Aaaabr Bbbbbr 12/01/1982
+Aaaabs Bbbbbs 11/01/1981
+Aaaabt Bbbbbt 10/01/1980
+Aaaabu Bbbbbu 13/01/1979
+Aaaabv Bbbbbv 12/01/1978
+Aaaabw Bbbbbw 11/01/1977
+Aaaabx Bbbbbx 10/01/1976
+Aaaaby Bbbbby 13/01/1975
+Aaaabz Bbbbbz 12/01/1974
+Aaaaaaa Bbbbba 15/01/1999
+Aaaaaab Bbbbbb 14/01/1998
+Aaaaaac Bbbbbc 13/01/1997
+Aaaaaad Bbbbbd 12/01/1996
+Aaaaaae Bbbbbe 15/01/1995
+Aaaaaaf Bbbbbf 14/01/1994
+Aaaaaag Bbbbbg 13/01/1993
+Aaaaaah Bbbbbh 12/01/1992
+Aaaaaai Bbbbbi 15/01/1991
+Aaaaaaj Bbbbbj 14/01/1990
+Aaaaaak Bbbbbk 13/01/1989
+Aaaaaal Bbbbbl 12/01/1988
+Aaaaaam Bbbbbm 15/01/1987
+Aaaaaan Bbbbbn 14/01/1986
+Aaaaaao Bbbbbo 13/01/1985
+Aaaaaap Bbbbbp 12/01/1984
+Aaaaaaq Bbbbbq 15/01/1983
+Aaaaaar Bbbbbr 14/01/1982
+Aaaaaas Bbbbbs 13/01/1981
+Aaaaaat Bbbbbt 12/01/1980
+Aaaaaau Bbbbbu 15/01/1979
+Aaaaaav Bbbbbv 14/01/1978
+Aaaaaaw Bbbbbw 13/01/1977
+Aaaaaax Bbbbbx 12/01/1976
+Aaaaaay Bbbbby 15/01/1975
+Aaaaaaz Bbbbbz 14/01/1974
+Aaabaa Bbbbba 17/01/1999
+Aaabab Bbbbbb 16/01/1998
+Aaabac Bbbbbc 15/01/1997
+Aaabad Bbbbbd 14/01/1996
+Aaabae Bbbbbe 13/01/1995
+Aaabaf Bbbbbf 12/01/1994
+Aaabag Bbbbbg 11/01/1993
+Aaabah Bbbbbh 17/01/1992
+Aaabai Bbbbbi 16/01/1991
+Aaabaj Bbbbbj 15/01/1990
+Aaabak Bbbbbk 14/01/1989
+Aaabal Bbbbbl 13/01/1988
+Aaabam Bbbbbm 12/01/1987
+Aaaban Bbbbbn 11/01/1986
+Aaabao Bbbbbo 17/01/1985
+Aaabap Bbbbbp 16/01/1984
+Aaabaq Bbbbbq 15/01/1983
+Aaabar Bbbbbr 14/01/1982
+Aaabas Bbbbbs 13/01/1981
+Aaabat Bbbbbt 12/01/1980
+Aaabau Bbbbbu 11/01/1979
+Aaabav Bbbbbv 12/01/1978
+Aaabaw Bbbbbw 11/01/1977
+Aaabax Bbbbbx 10/01/1976
+Aaabay Bbbbby 13/01/1975
+Aaabaz Bbbbbz 12/01/1974
+Aaaaaa Bbbbba 15/01/1999
+Aaaaab Bbbbbb 14/01/1998
+Aaaaac Bbbbbc 13/01/1997
+Aaaaad Bbbbbd 12/01/1996
+Aaaaae Bbbbbe 15/01/1995
+Aaaaaf Bbbbbf 14/01/1994
+Aaaaag Bbbbbg 13/01/1993
+Aaaaah Bbbbbh 12/01/1992
+Aaaaai Bbbbbi 15/01/1991
+Aaaaaj Bbbbbj 14/01/1990
+Aaaaak Bbbbbk 13/01/1989
+Aaaaal Bbbbbl 12/01/1988
+Aaaaam Bbbbbm 15/01/1987
+Aaaaan Bbbbbn 14/01/1986
+Aaaaao Bbbbbo 13/01/1985
+Aaaaap Bbbbbp 12/01/1984
+Aaaaaq Bbbbbq 15/01/1983
+Aaaaar Bbbbbr 14/01/1982
+Aaaaas Bbbbbs 13/01/1981
+Aaaaat Bbbbbt 12/01/1980
+Aaaaau Bbbbbu 15/01/1979
+Aaaaav Bbbbbv 14/01/1978
+Aaaaaw Bbbbbw 13/01/1977
+Aaaaax Bbbbbx 12/01/1976
+Aaaaay Bbbbby 15/01/1975
+Aaaaaz Bbbbbz 14/01/1974
+12/01/2015
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">438</span>
+    	</div>
+    	<pre id="output_9">Aaaaaad Bbbbbd 19
+Aaaaaah Bbbbbh 23
+Aaaaaal Bbbbbl 27
+Aaaaaap Bbbbbp 31
+Aaaaaat Bbbbbt 35
+Aaaaaax Bbbbbx 39
+Aaaaad Bbbbbd 19
+Aaaaah Bbbbbh 23
+Aaaaal Bbbbbl 27
+Aaaaap Bbbbbp 31
+Aaaaat Bbbbbt 35
+Aaaaax Bbbbbx 39
+Aaaabb Bbbbbb 17
+Aaaabf Bbbbbf 21
+Aaaabj Bbbbbj 25
+Aaaabn Bbbbbn 29
+Aaaabr Bbbbbr 33
+Aaaabv Bbbbbv 37
+Aaaabz Bbbbbz 41
+Aaabaf Bbbbbf 21
+Aaabam Bbbbbm 28
+Aaabat Bbbbbt 35
+Aaabav Bbbbbv 37
+Aaabaz Bbbbbz 41
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">414</span>
+    	</div>
+    	<pre id="your_output_9">Aaaaaad Bbbbbd 19
+Aaaaaah Bbbbbh 23
+Aaaaaal Bbbbbl 27
+Aaaaaap Bbbbbp 31
+Aaaaaat Bbbbbt 35
+Aaaaaax Bbbbbx 39
+Aaaaad Bbbbbd 19
+Aaaaah Bbbbbh 23
+Aaaaal Bbbbbl 27
+Aaaaap Bbbbbp 31
+Aaaaat Bbbbbt 35
+Aaaaax Bbbbbx 39
+Aaaabb Bbbbbb 17
+Aaaabf Bbbbbf 21
+Aaaabj Bbbbbj 25
+Aaaabn Bbbbbn 29
+Aaaabr Bbbbbr 33
+Aaaabv Bbbbbv 37
+Aaaabz Bbbbbz 41
+Aaabaf Bbbbbf 21
+Aaabam Bbbbbm 28
+Aaabat Bbbbbt 35
+Aaabav Bbbbbv 37
+Aaabaz Bbbbbz 41
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_9" class="diff"></pre>
+    </td>
+</tr>
+<tr>
+    <td>10</td>
+    <td><pre id="input_10">104
+Aaaaba Bbbbba 13/01/1999
+Aaaabb Bbbbbb 12/01/1998
+Aaaabc Bbbbbc 11/01/1997
+Aaaabd Bbbbbd 10/01/1996
+Aaaabe Bbbbbe 13/01/1995
+Aaaabf Bbbbbf 12/01/1994
+Aaaabg Bbbbbg 11/01/1993
+Aaaabh Bbbbbh 10/01/1992
+Aaaabi Bbbbbi 13/01/1991
+Aaaabj Bbbbbj 12/01/1990
+Aaaabk Bbbbbk 11/01/1989
+Aaaabl Bbbbbl 10/01/1988
+Aaaabm Bbbbbm 13/01/1987
+Aaaabn Bbbbbn 12/01/1986
+Aaaabo Bbbbbo 11/01/1985
+Aaaabp Bbbbbp 10/01/1984
+Aaaabq Bbbbbq 13/01/1983
+Aaaabr Bbbbbr 12/01/1982
+Aaaabs Bbbbbs 11/01/1981
+Aaaabt Bbbbbt 10/01/1980
+Aaaabu Bbbbbu 13/01/1979
+Aaaabv Bbbbbv 12/01/1978
+Aaaabw Bbbbbw 11/01/1977
+Aaaabx Bbbbbx 10/01/1976
+Aaaaby Bbbbby 13/01/1975
+Aaaabz Bbbbbz 12/01/1974
+Aaaaaaa Bbbbba 15/01/1999
+Aaaaaab Bbbbbb 14/01/1998
+Aaaaaac Bbbbbc 13/01/1997
+Aaaaaad Bbbbbd 12/01/1996
+Aaaaaae Bbbbbe 15/01/1995
+Aaaaaaf Bbbbbf 14/01/1994
+Aaaaaag Bbbbbg 13/01/1993
+Aaaaaah Bbbbbh 12/01/1992
+Aaaaaai Bbbbbi 15/01/1991
+Aaaaaaj Bbbbbj 14/01/1990
+Aaaaaak Bbbbbk 13/01/1989
+Aaaaaal Bbbbbl 12/01/1988
+Aaaaaam Bbbbbm 15/01/1987
+Aaaaaan Bbbbbn 14/01/1986
+Aaaaaao Bbbbbo 13/01/1985
+Aaaaaap Bbbbbp 12/01/1984
+Aaaaaaq Bbbbbq 15/01/1983
+Aaaaaar Bbbbbr 14/01/1982
+Aaaaaas Bbbbbs 13/01/1981
+Aaaaaat Bbbbbt 12/01/1980
+Aaaaaau Bbbbbu 15/01/1979
+Aaaaaav Bbbbbv 14/01/1978
+Aaaaaaw Bbbbbw 13/01/1977
+Aaaaaax Bbbbbx 12/01/1976
+Aaaaaay Bbbbby 15/01/1975
+Aaaaaaz Bbbbbz 14/01/1974
+Aaabaa Bbbbba 17/01/1999
+Aaabab Bbbbbb 16/01/1998
+Aaabac Bbbbbc 15/01/1997
+Aaabad Bbbbbd 14/01/1996
+Aaabae Bbbbbe 13/01/1995
+Aaabaf Bbbbbf 12/01/1994
+Aaabag Bbbbbg 11/01/1993
+Aaabah Bbbbbh 17/01/1992
+Aaabai Bbbbbi 16/01/1991
+Aaabaj Bbbbbj 15/01/1990
+Aaabak Bbbbbk 14/01/1989
+Aaabal Bbbbbl 13/01/1988
+Aaabam Bbbbbm 12/01/1987
+Aaaban Bbbbbn 11/01/1986
+Aaabao Bbbbbo 17/01/1985
+Aaabap Bbbbbp 16/01/1984
+Aaabaq Bbbbbq 15/01/1983
+Aaabar Bbbbbr 14/01/1982
+Aaabas Bbbbbs 13/01/1981
+Aaabat Bbbbbt 12/01/1980
+Aaabau Bbbbbu 11/01/1979
+Aaabav Bbbbbv 12/01/1978
+Aaabaw Bbbbbw 11/01/1977
+Aaabax Bbbbbx 10/01/1976
+Aaabay Bbbbby 13/01/1975
+Aaabaz Bbbbbz 12/01/1974
+Aaaaaa Bbbbba 15/01/1999
+Aaaaab Bbbbbb 14/01/1998
+Aaaaac Bbbbbc 13/01/1997
+Aaaaad Bbbbbd 12/01/1996
+Aaaaae Bbbbbe 15/01/1995
+Aaaaaf Bbbbbf 14/01/1994
+Aaaaag Bbbbbg 13/01/1993
+Aaaaah Bbbbbh 12/01/1992
+Aaaaai Bbbbbi 15/01/1991
+Aaaaaj Bbbbbj 14/01/1990
+Aaaaak Bbbbbk 13/01/1989
+Aaaaal Bbbbbl 12/01/1988
+Aaaaam Bbbbbm 15/01/1987
+Aaaaan Bbbbbn 14/01/1986
+Aaaaao Bbbbbo 13/01/1985
+Aaaaap Bbbbbp 12/01/1984
+Aaaaaq Bbbbbq 15/01/1983
+Aaaaar Bbbbbr 14/01/1982
+Aaaaas Bbbbbs 13/01/1981
+Aaaaat Bbbbbt 12/01/1980
+Aaaaau Bbbbbu 15/01/1979
+Aaaaav Bbbbbv 14/01/1978
+Aaaaaw Bbbbbw 13/01/1977
+Aaaaax Bbbbbx 12/01/1976
+Aaaaay Bbbbby 15/01/1975
+Aaaaaz Bbbbbz 14/01/1974
+14/02/2015
+</pre></td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">6</span>
+    	</div>
+    	<pre id="output_10">Nema
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+    		Size: <span class="output_size">5</span>
+    	</div>
+    	<pre id="your_output_10">Nema
+</pre>
+    </td>
+    <td>
+    	<div class="io_header">
+	    		        	<span class="label label-success"><i class="fa fa-check"></i> Yes</span>
+	        	        	    </div>
+        <pre style="display: none;" id="diff_10" class="diff"></pre>
+    </td>
+</tr>
+</tbody>
+</table>
+</div>
+    
+  	<div class="modal fade" id="resetAlert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  	<div class="modal-dialog">
+  		<div class="modal-content">
+	  	<div class="modal-header">
+	    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    	<h3 id="myModalLabel">Warning</h3>
+	  	</div>
+		<div class="modal-body">
+			<p>Are you sure you want to reset the contents of the editor to the starter code?</p>
+		</div>
+  		<div class="modal-footer">
+   			<button type="button" id="btn-reset-yes" value="Yes" data-dismiss="modal" class="btn btn-danger btn-sm">Yes</button>
+   			<button type="button" class="btn btn-default btn-sm" data-dismiss="modal" aria-hidden="true">Cancel</button>
+  		</div>
+  		</div>
+  		</div>
+	</div>
+	
+	  	<div class="modal fade" id="yes_i_will_solve" tabindex="-1" role="dialog" aria-labelledby="yes_i_will_solve" aria-hidden="true">
+	  	  	<div class="modal-dialog">
+  		<div class="modal-content">
+	  	<div class="modal-header">
+	    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    	<h3 id="aprilFoolsLabel">Your solution</h3>
+	  	</div>
+		<div class="modal-body text-center">
+			<div style="margin-bottom: 10px;">
+				<img src="./Родендени _ Code_files/yay_happy.gif" class="img-polaroid">
+			</div>
+			<div id="terminal" class="typist-container" style="background-color: rgb(51, 51, 51); color: rgb(221, 221, 221); font-family: monospace; height: 80px;"></div>
+		</div>  	
+		</div>
+		</div>	
+	</div>
+
+<input type="hidden" name="isReadOnly" id="isReadOnly" value="false">
+
+
+      </div>
+      </div>
+
+      <hr>
+
+      <footer>
+    <p>© CSE 2012 - 2017 | <a href="http://develop.finki.ukim.mk/projects/e-lab">Support &amp; Development</a></p>
+</footer>
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./Родендени _ Code_files/jquery-1.11.0.min.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/jquery.dataTables.min.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/dataTables.bootstrap.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/jquery.hotkeys.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/typeahead.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/bootstrap.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/code.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/helper.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/diff_match_patch.js.download" type="text/javascript" charset="utf-8"></script>
+
+<script src="./Родендени _ Code_files/codemirror.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/dialog.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/fullscreen.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/searchcursor.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/search.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/match-highlighter.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/matchbrackets.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/closebrackets.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/clike.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/python.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/shell.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/commonlisp.js.download" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/x-mathjax-config;executed=true">
+	MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+	tex2jax: { inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+    TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+    messageStyle: "none"
+    });
+</script>
+<script type="text/javascript" src="./Родендени _ Code_files/MathJax.js.download" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/jquery.jfontsize-1.0.min.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/problem.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/clock.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/editor.js.download" type="text/javascript" charset="utf-8"></script>
+<script src="./Родендени _ Code_files/jquery.typist.js.download" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+(function(){
+	
+	var isReadOnly = $('#isReadOnly').val() == "true";
+	var isTimeLimited = $('#isTimeLimited').val() == "true";
+	var hasHistory = $('#hasHistory').val() == "true";
+	
+	$(document).ready(function() {
+		if(!hasHistory) {
+			$('#restore').hide();
+		}
+		$('#warning').hide();
+	});
+
+	var textArea = document.getElementById('code');
+	var mode = "text/x-java";
+	
+	Code.Editor.init(textArea, mode, isReadOnly);
+	
+	Code.Execute = {
+		run : function() {
+			Code.Editor.clearErrors();
+			var code = Code.Editor.getCode();
+		    $.post('/code/run', { 
+		             code : code,
+		             'problemData.id' : 5873
+		        },
+		        function(data) {
+		            $('#output').html("");
+		        	if(data.success) {
+		        		$('#output').removeClass("output-error");
+		                $('#output').addClass("output-success");        		
+		        	} else {
+		        		$('#output').removeClass("output-success");
+		        		$('#output').addClass("output-error");
+		        		Code.Editor.markErrors(data.errors);
+		        	}
+		            $('#output').append(data.output);
+		            if(data.warning) {
+		            	$('#warning').html("");
+		            	$('#warning').append(data.warning);
+		            	$('#warning').show();
+		            	Code.Editor.markErrors(data.errors);
+		            } else {
+		            	$('#warning').hide();
+		            }
+		            $('#problem-revisions').load('/code/revisions', {
+		                'problemData.id' : 5873
+		            }, function() {
+		        		hasHistory = $('#hasHistory').val() == "true";
+		        		if(hasHistory) {
+		        			$('#restore').show();
+		        		}
+		            });
+		        }
+		    );
+		},
+		submit : function() {
+			var code = Code.Editor.getCode();
+	    	$.post('/submit', { 
+	             code : code,
+	             'problemData.id' : 5873
+	        },
+	        function(data) {
+	            $('#submission-output').html(data);
+	            $('#problem-revisions').load('/code/revisions', {
+	                'problemData.id' : 5873
+	            }, function(){
+	        		var hasHistory = $('#hasHistory').val() == "true";
+	        		if(hasHistory) {
+	        			$('#restore').show();
+	        		}
+	            });
+	            Code.Execute.attempts();
+	            $('html,body').animate({scrollTop: $("#submission-output").offset().top - 40},'slow');
+	        });
+		},
+		save : function(autosave) {
+			var code = Code.Editor.getCode();
+			$.post('/code/save', { 
+		        code : code,
+		        'problemData.id' : 5873
+		   		},
+		   		function(data) {
+			    	if(autosave) {
+			    		$("#auto-saved").fadeIn(300).delay(2000).fadeOut(300);
+			    	} else {
+			    		$("#saved").fadeIn(300).delay(2000).fadeOut(300);
+					}
+			    	$('#problem-revisions').load('/code/revisions', {
+		            	'problem.id' : 5873
+		        	});
+		   	});
+		},
+		reset : function() {
+			$.post('/code/reset', { 
+		         'problemData.id' : 5873
+		    	},
+		    	function(data) {
+		    		Code.Editor.setCode(data);
+		    	}
+			);
+		},
+		restore : function(){
+			var solutionHistoryId = $('#solutionHistory').val();
+			if(solutionHistoryId) {
+				$('#code').load(
+			            '/code/loadsolutionfromhistory',
+			            {
+			                'solutionHistoryId' : solutionHistoryId
+			            }, function(data) {
+			            	Code.Editor.setCode(data);
+			            }
+			     );
+			}
+		},
+		attempts: function() {
+			$('#attempts').load('/code/attempts', {
+            	'problem.id' : 3785
+            }, function() {
+            	var exceeded = $('#exceeded').val();
+            	if(exceeded == "true") {
+            		$('#submit').attr('disabled', true);
+            	}
+            });
+		}
+	}
+	$('#run').click(Code.Execute.run);
+	$('#submit').click(Code.Execute.submit);
+	//$('#save').click(Code.Execute.save(false));
+	$('#btn-reset-yes').click(Code.Execute.reset);
+	$('#restore').click(Code.Execute.restore);
+	// use closure
+	$('#format').click(function(){ return Code.Editor.format(5873) });
+    $('#analyze').click(function() { return Code.Editor.analyze(5873, function(data) {
+        console.log(data);
+        if(data.errors) {
+            $("#clang_output").show();
+            $("#output_link").attr("href", data.uri);
+        } else {
+            $("#clang_output").hide();
+        }
+    })});
+	var working = $('#working').hide();
+	$(document).ajaxStart(function() {
+    	$('#buttons').hide();
+        working.show();
+    }).ajaxStop(function() {
+        working.hide();
+        $('#buttons').show();
+    });
+	$('#select-theme').change(function(){
+		Code.Editor.setTheme($(this).val());
+	});
+	  
+	
+	$('.CodeMirror').jfontsize({
+		btnMinusClasseId: '#minus-btn',
+	    btnDefaultClasseId: '#default-btn',
+	    btnPlusClasseId: '#plus-btn',
+	    btnMinusMaxHits: 5,
+	    btnPlusMaxHits: 8,
+	    sizeChange: 1
+	});
+	
+	// Create a newDate() object
+	var dateOpened = new Date(1485284625000);
+	var dateEnd = new Date(parseInt($('#dateEnd').val()));
+	var serverTime = 1485475778546;
+	Code.Clock.init($('#time'), dateOpened, serverTime, dateEnd);
+	
+	if(isTimeLimited && !isReadOnly) {
+		Code.Clock.initTimeLimited($('#time-left'), dateEnd, serverTime, "/courses/finish?problemDataId=5873&courseId=61");	
+	}
+	
+	var dmp = new diff_match_patch();
+	
+	Code.viewDiff = function(test) {
+		var text2 = $('#output_' + test).html();
+		var text1 = $('#your_output_' + test).html();
+		var d = dmp.diff_main(text1, text2);
+		var ds = dmp.diff_prettyHtml(d);
+		$('#diff_' + test).html(ds);
+		$('#diff_' + test).show();
+	}
+	$('#setAutoBtn').hide();
+    $('#setFixedBtn').click(function() {
+        $(this).hide();
+        $('#setAutoBtn').show();
+        Code.Editor.setAutoSize();
+    });
+    $('#setAutoBtn').click(function() {
+        $(this).hide();
+        $('#setFixedBtn').show();
+        Code.Editor.setFixedSize();
+    });
+
+	$(document).bind('keydown', 'ctrl+shift+5', Code.Execute.run);
+	$(document).bind('keydown', 'ctrl+shift+6', Code.Execute.submit);
+	$(document).bind('keydown', 'ctrl+shift+0', Code.Execute.reset);
+
+	$('#terminal').typist({
+  		height: 80,
+  		speed : 'slow'
+	});
+	
+	 /* $('#yes_i_will_solve').on('shown.bs.modal', function(){
+		$('#terminal').typist('prompt')
+		  .typist('type', 'Кој ден сме денес?')
+		  .typist('echo', '1 Април')
+		  .typist('echo', 'Априлилили!');
+		(function(){function c(){var e=document.createElement("link");e.setAttribute("type","text/css");e.setAttribute("rel","stylesheet");e.setAttribute("href",f);e.setAttribute("class",l);document.body.appendChild(e)}function h(){var e=document.getElementsByClassName(l);for(var t=0;t<e.length;t++){document.body.removeChild(e[t])}}function p(){var e=document.createElement("div");e.setAttribute("class",a);document.body.appendChild(e);setTimeout(function(){document.body.removeChild(e)},100)}function d(e){return{height:e.offsetHeight,width:e.offsetWidth}}function v(i){var s=d(i);return s.height>e&&s.height<n&&s.width>t&&s.width<r}function m(e){var t=e;var n=0;while(!!t){n+=t.offsetTop;t=t.offsetParent}return n}function g(){var e=document.documentElement;if(!!window.innerWidth){return window.innerHeight}else if(e&&!isNaN(e.clientHeight)){return e.clientHeight}return 0}function y(){if(window.pageYOffset){return window.pageYOffset}return Math.max(document.documentElement.scrollTop,document.body.scrollTop)}function E(e){var t=m(e);return t>=w&&t<=b+w}function S(){var e=document.createElement("audio");e.setAttribute("class",l);e.src=i;e.loop=false;e.addEventListener("canplay",function(){setTimeout(function(){x(k)},500);setTimeout(function(){N();p();for(var e=0;e<O.length;e++){T(O[e])}},15500)},true);e.addEventListener("ended",function(){N();h()},true);e.innerHTML=" <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";document.body.appendChild(e);e.play()}function x(e){e.className+=" "+s+" "+o}function T(e){e.className+=" "+s+" "+u[Math.floor(Math.random()*u.length)]}function N(){var e=document.getElementsByClassName(s);var t=new RegExp("\\b"+s+"\\b");for(var n=0;n<e.length;){e[n].className=e[n].className.replace(t,"")}}var e=30;var t=30;var n=350;var r=350;var i="//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";var s="mw-harlem_shake_me";var o="im_first";var u=["im_drunk","im_baked","im_trippin","im_blown"];var a="mw-strobe_light";var f="//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";var l="mw_added_css";var b=g();var w=y();var C=document.getElementsByTagName("*");var k=null;for(var L=0;L<C.length;L++){var A=C[L];if(v(A)){if(E(A)){k=A;break}}}if(A===null){console.warn("Could not find a node of the right size. Please try a different page.");return}c();S();var O=[];for(var L=0;L<C.length;L++){var A=C[L];if(v(A)){O.push(A)}}})()
+	}); */
+	
+})();
+</script>
+
+      
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $('#btn-icon').toggleClass("fa-chevron-right fa-chevron-left");
+    });
+    </script>
+    
+</body></html>

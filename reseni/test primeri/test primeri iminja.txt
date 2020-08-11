@@ -1,0 +1,4 @@
+3 3
+jessie 2500
+jackie 2200
+ashley 2000
